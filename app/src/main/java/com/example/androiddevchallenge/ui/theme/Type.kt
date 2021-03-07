@@ -17,9 +17,19 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val JetbrainsFontFamily = FontFamily(
+    Font(R.font.jetbrains_300, FontWeight.W300),
+    Font(R.font.jetbrains_400, FontWeight.W400),
+    Font(R.font.jetbrains_500, FontWeight.W500),
+    Font(R.font.jetbrains_700, FontWeight.W700),
+    Font(R.font.jetbrains_800, FontWeight.W800)
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
