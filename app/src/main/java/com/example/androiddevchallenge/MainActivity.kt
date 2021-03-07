@@ -89,10 +89,11 @@ fun MyApp() {
 @Composable
 fun Toolbar() {
     val isDark = isSystemInDarkTheme()
-    Box(modifier = Modifier
-        .fillMaxWidth()
-        .height(56.dp)
-        .padding(horizontal = 8.dp),
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(56.dp)
+            .padding(horizontal = 8.dp),
     ) {
         Text(
             modifier = Modifier.align(Alignment.Center),
@@ -127,9 +128,9 @@ fun Window.setStatusBarColor(
 
     if (darkIcons) {
         decorView.systemUiVisibility = decorView.systemUiVisibility or
-                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
     } else {
         decorView.systemUiVisibility = decorView.systemUiVisibility and
-                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
+            View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
     }
 }
